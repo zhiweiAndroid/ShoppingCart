@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="credit.sina.com.shopcardemo.MainActivity">
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="42dp"
+                    android:text="本次还款金额(元)"
+                    android:textColor="@color/tv_nine"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="¥1000.00"
+                    android:textColor="@color/tv_three" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="42dp"
+                    android:background="@color/line"></View>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/background"></View>
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:background="#FFFFFF">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"></View>
+
+
+        <TextView
+            android:id="@+id/tv_return_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/text_red"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="立即还款"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/cb_cart_all"
+            style="@style/CartCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/tv_quanxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/cb_cart_all"
+            android:text="全选"
+            android:textColor="@color/tv_nine"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_money_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_quanxuan"
+            android:text="已选金额："
+            android:textColor="#FF666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_cart_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_money_all"
+            android:text=""
+            android:textColor="@color/text_red"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

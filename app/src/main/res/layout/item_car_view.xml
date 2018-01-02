@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<credit.sina.com.shopcardemo.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"></View>
+        <CheckBox
+            android:padding="10dp"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/cb_is_selected"
+            style="@style/CartCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/tv_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cb_is_selected"
+            android:text="1/10"
+            android:textColor="@color/tv_nine"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_order_date"
+            android:text=""
+            android:textColor="@color/tv_nine"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_order_date"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/cb_is_selected"
+            android:text="2017-11-17日应还"
+            android:textColor="@color/tv_nine"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_go"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_right" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:layout_toLeftOf="@id/iv_go"
+            android:text="已还款"
+            android:textColor="@color/text_red"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_red"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</credit.sina.com.shopcardemo.SwipeItemLayout>
